@@ -47,7 +47,7 @@ test('POST `/posts`', async (t) => {
 
 		const { response, json } = await postThePost({ username, title, content });
 
-		t.equal(response.status, 403);
+		t.equal(response.status, 400);
 		t.equal(json.message, 'username must be less than 12 characters');
 	});
 
@@ -59,7 +59,7 @@ test('POST `/posts`', async (t) => {
 
 		const { response, json } = await postThePost({ username, title, content });
 
-		t.equal(response.status, 403);
+		t.equal(response.status, 400);
 		t.equal(json.message, 'username, title and content are required');
 	});
 

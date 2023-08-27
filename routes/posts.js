@@ -29,7 +29,7 @@ export default async (server, { hdbCore, logger }) => {
 				validatedData = validateCreatePostInput(data);
 			} catch (error) {
 				// posted data is invalid, so return the error message
-				return reply.status(403).send({ message: error.message });
+				return reply.status(400).send({ message: error.message });
 			}
 			// data is all good, so insert it into the posts table
 			request.body = {
