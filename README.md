@@ -1,3 +1,9 @@
+# Testing HarperDB with Node Tap Tutorial
+
+Here is the tutorial that I wrote for this project: https://dev.to/doabledanny/how-to-test-harperdb-custom-functions-with-node-tap-53hl
+
+HarperDB custom functions info below...
+
 # HarperDB Custom Functions Template
 
 This repo comprises a set of Fastify routes and helpers to be loaded by HarperDB's Custom Functions Fastify Server.
